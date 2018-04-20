@@ -1,9 +1,14 @@
 
-
+<div class = "center jumbotron">
 	<h1>Sample App Home Page</h1>
-	<h2><a href="/app/views/help.html.erb"> help</h2>
-	<h2><a href="/app/views/about.html.erb"> about</h2>
-	<p>This is a home page for the sample application</p>
+	<h2>
+		This is the home page for Boxuan Zhu
+		<a href = "https://github.com/BoxuanZhu/Swift.git"> Git for Swift Tutorial</a>
+		sample application.
+	</h2>
+	<%= link_to "Sign up now!", signup_path , class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("homepage.png", alt: "Random Logo", width: "100px", height: "100px"), 'https://github.com/BoxuanZhu/Swift.git' %>
 
 
 

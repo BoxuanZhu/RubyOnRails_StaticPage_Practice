@@ -5,6 +5,8 @@ ruby '2.4.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
+# Bootstrap from twitter uses Less CSS language for making dynamic style sheets
+gem 'bootstrap-sass', '3.3.6'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3' 
 # Use Puma as the app server
@@ -52,6 +54,10 @@ group :development do
 end
 
 group :test do
+  gem 'rails-controller-testing', '0.1.1'
+  gem 'minitest-reporters', '1.1.9'
+  gem 'guard', '2.13.0'
+  gem 'guard-minitest', '2.4.4'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'selenium-webdriver'
